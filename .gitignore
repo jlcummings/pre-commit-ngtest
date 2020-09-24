@@ -59,3 +59,10 @@ typings/
 
 # next.js build output
 .next
+
+# visual studio/microsoft build
+.suo
+.vs/
+.vs/ProjectSettings.json
+.vs/slnx.sqlite
+applicationhost.config

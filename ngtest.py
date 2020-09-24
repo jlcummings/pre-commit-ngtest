@@ -8,15 +8,15 @@ def main(argv=None):
     Handle various pre-commit config options:
     - args:
         - if set, a bare double-dash is needed to distinguish options from the list of filenames
-        - args before '--' are lint options and args after '--' are filenames
+        - args before '--' are test options and args after '--' are filenames
     - pass_filenames:
-        - if false, ng lint should run over the full project
+        - if false, ng test should run over the full project
     '''
-    cmd = ['ng', 'lint'] # If no args, run ng lint over the whole project
+    cmd = ['ng', 'test'] # If no args, run ng test over the whole project
 
     if len(sys.argv) > 1: # sys.argv => command + args; length >= 1
         if '--' in sys.argv:
-            # argv items before '--' are lint options
+            # argv items before '--' are test options
             bare_dd_index = sys.argv.index('--')
             cmd = cmd + sys.argv[1:bare_dd_index]
 
