@@ -11,8 +11,8 @@ This is the Angular-Cli test ([ng test](https://angular.io/cli/test)) hook for [
 Finally add this to your `.pre-commit-config.yaml`:
 
 ```yaml
-    -   repo: git://github.com/dwightgunning/pre-commit-ngtest/
-        sha: ''  # Use the sha or tag (e.g. 'stable') you want to point at
+    -   repo: https://github.com/jlcummings/pre-commit-ngtest
+        rev: v.0.0.1-a  # Use the sha or tag (e.g. 'stable') you want to point at
         hooks:
         -   id: ngtest
 ```
@@ -33,6 +33,6 @@ Unfortunately, the combination of Angular-cli's support for multiple 'projects' 
 
 ## Copyright and License Information
 
-Copyright (c) 2019 Dwight Gunning, and individual contributors. All rights reserved.
+Copyright (c) 2020 Justin Cummings, and individual contributors. All rights reserved.
 
 See the file "LICENSE" for information on the history of this software, terms & conditions for usage, and a DISCLAIMER OF ALL WARRANTIES.
