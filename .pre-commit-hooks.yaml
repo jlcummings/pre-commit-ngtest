@@ -1,7 +1,7 @@
--   id: nglint
-    name: nglint
-    description: Runs ng lint
-    entry: nglint.py
+-   id: ngtest
+    name: ngtest
+    description: Runs ng test
+    entry: ngtest.py
     language: script
 
     # Use additional_dependencies to install the actual node package
